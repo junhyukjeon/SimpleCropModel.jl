@@ -43,7 +43,7 @@ config = @config(
     ),
 )
 
-@testset "lais" begin
+@testset "LAIS" begin
     r = simulate(LAISController; config, stop = 5u"d")
     visualize(r, :time, :LAI; kind = :line) |> println
 end
