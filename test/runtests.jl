@@ -13,6 +13,4 @@ using Test
     include("STRESS.jl")
     include("WBAL.jl")
     include("LAIS.jl")
-    include("LAIS.jl")
-    include("LAIS.jl")
 end

@@ -14,7 +14,7 @@ include("WBAL.jl")
     SWFAC1 ~ hold
     SWFAC2 ~ hold
 
-    t(context.clock.time) ~ preserve(u"hr")
+    # t(context.clock.time) ~ preserve(u"hr")
 
     WPp => 0.06 ~ preserve(u"cm^3/cm^3", parameter)
     FCp => 0.17 ~ preserve(u"cm^3/cm^3", parameter)

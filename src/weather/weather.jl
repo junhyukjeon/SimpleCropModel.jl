@@ -1,6 +1,6 @@
 @system Weather begin
     calendar(context) ~ ::Calendar
-    w: weather_data ~ provide(index=:DATE, init=calendar.date, parameter)
+    w ~ provide(index=:DATE, init=calendar.date, parameter)
 
     DATE ~ drive::date(from=w)
     TMAX: maximum_temperature ~ drive(from=w, u"°C")
